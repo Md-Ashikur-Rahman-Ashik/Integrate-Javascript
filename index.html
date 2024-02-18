@@ -62,10 +62,7 @@
           <!-- Rectangle card -->
           <div class="card w-full bg-base-100 p-4">
             <figure>
-              <img
-                src="images/rectangle.png"
-                alt="Shoes"
-              />
+              <img src="images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rectangle</h2>
@@ -94,17 +91,19 @@
                 </p>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full" onclick="calculateRectangleArea()">Calculate</button>
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateRectangleArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Parallelogram card -->
           <div class="card w-full bg-base-100 p-4">
             <figure>
-              <img
-                src="images/parallelogram.png"
-                alt="Shoes"
-              />
+              <img src="images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram</h2>
@@ -133,17 +132,19 @@
                 </p>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full" onclick="parallelogramArea()">Calculate</button>
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="parallelogramArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Rhombus card -->
           <div class="card w-full bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="images/rhombus.png"
-                alt="Shoes"
-              />
+              <img src="images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Rhombus</h2>
@@ -170,19 +171,21 @@
                   Area: <span id="rhombusArea"></span>
                   <span>cm<sup>2</sup></span>
                 </p>
-                </div>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full" onclick=" calculateRhombusArea()">Calculate</button>
+                <button
+                  class="btn btn-primary w-full"
+                  onclick=" calculateRhombusArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- Pentagon card -->
           <div class="card w-full bg-base-100">
             <figure>
-              <img
-                src="images/pentagon.png"
-                alt="Shoes"
-              />
+              <img src="images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
@@ -209,19 +212,30 @@
                   Area: <span id="pentagonArea"></span>
                   <span>cm<sup>2</sup></span>
                 </p>
-                </div>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full" onclick="calculatePentagonArea()">Calculate</button>
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculatePentagonArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- Area calculation container -->
         <div class="w-96 border-2 border-gray-700 rounded-md">
-            <h3 class="text-3xl text-center p-4">Area calculation</h3>
-          </div>
+          <h3 class="text-3xl text-center p-4">Area calculation</h3>
+        </div>
       </div>
     </main>
+    <p id="name">Programming Hero</p>
+    <script>
+      const nameOfOrganization = document.getElementById("name").value;
+
+      console.log(nameOfOrganization);
+    </script>
     <script src="scripts/calculator.js"></script>
   </body>
 </html>
